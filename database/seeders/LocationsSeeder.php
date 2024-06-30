@@ -10,8 +10,13 @@ class LocationsSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-    public function run(): void
+    public function run()
     {
-        //
+        DB::table('locations')->insert([
+            ['name' => 'uniwermag'],
+            ['name' => 'parahat 1'],
+            ['name' => 'anew'],
+        ]);
     }
+
 }
