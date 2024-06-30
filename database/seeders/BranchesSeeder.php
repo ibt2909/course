@@ -10,8 +10,15 @@ class BranchesSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-    public function run(): void
+    public function run()
     {
-        //
+        DB::table('branches')->insert([
+            ['name' => 'beginner'],
+            ['name' => 'elementary'],
+            ['name' => 'pre'],
+            ['name' => 'inter'],
+            ['name' => 'upper'],
+        ]);
     }
+
 }

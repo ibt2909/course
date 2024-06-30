@@ -10,8 +10,13 @@ class LessonsSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-    public function run(): void
+    public function run()
     {
-        //
+        $this->call(LocationsSeeder::class);
+        $this->call(ClassroomsSeeder::class);
+        $this->call(TeachersSeeder::class);
+        $this->call(StudentsSeeder::class);
+        $this->call(BranchesSeeder::class);
+        $this->call(LessonsSeeder::class);
     }
 }
