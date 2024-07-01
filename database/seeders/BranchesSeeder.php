@@ -12,7 +12,7 @@ class BranchesSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('branches')->insert([
+        BranchesSeeder::table('branches')->insert([
             ['name' => 'beginner'],
             ['name' => 'elementary'],
             ['name' => 'pre'],
